@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Personal academic profile page using semantic HTML5 and advanced forms">
+    <meta name="keywords" content="HTML5, Semantic Web, Academic Profile, Web Technologies">
+    <meta name="author" content="Ahmed Faysal">
+    <title>Academic Profile - Ahmed Faysal</title>
+</head>
+
+<body>
+    <header>
+        <h1>Ahmed Faysal</h1>
+        <p>Student | Department of Computer Science | AIUB</p>
+        <nav>
+            <a href="#bio">Biography</a> |
+            <a href="#education">Education</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="bio">
+            <h2>Biography</h2>
+            <p>
+                I am a Computer Science student at American International University-Bangladesh.
+                I am interested in web technologies, software development, and data science.
+            </p>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+
+            <table border="1">
+                <caption>Academic Qualifications</caption>
+
+                <thead>
+                    <tr>
+                        <th>Degree</th>
+                        <th>Institution</th>
+                        <th>Year</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>BSc in Computer Science</td>
+                        <td>AIUB</td>
+                        <td>2026</td>
+                        <td>3.00</td>
+                    </tr>
+                    <tr>
+                        <td>HSC</td>
+                        <td>BAF Shaheen College,Kurmitola</td>
+                        <td>2020</td>
+                        <td>5.00</td>
+                    </tr>
+                    <tr>
+                        <td>SSC</td>
+                        <td>Sristy Academic School</td>
+                        <td>2018</td>
+                        <td>5.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form action="#" method="post">
+
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" 
+                       placeholder="Enter your name" required maxlength="50"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" 
+                       placeholder="Enter your email" required><br><br>
+
+                <label for="phone">Phone:</label><br>
+                <input type="tel" id="phone" name="phone"
+                       placeholder="01XXXXXXXXX"
+                       pattern="01[0-9]{9}"
+                       maxlength="11"><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message"
+                          placeholder="Write your message"
+                          required maxlength="300"></textarea><br><br>
+
+                <input type="submit" value="Send Message">
+                <input type="reset" value="Reset">
+
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <p>Contact: ahmed@example.com</p>
+        <p>&copy;Faysal Ahmed Shovo</p>
+    </footer>
+
+</body>
+</html>
+
