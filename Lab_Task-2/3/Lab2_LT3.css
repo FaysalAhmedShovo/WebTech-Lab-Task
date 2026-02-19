@@ -1,0 +1,72 @@
+/*General Styling*/
+body {
+    font-family: Arial, sans-serif;
+}
+
+/*Part A: Box Model*/
+
+.box {
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    padding: 15px;
+    border: 5px solid black;
+}
+
+/* Default box-sizing (content-box) */
+.box1 {
+    background-color: lightblue;
+}
+
+/* Different spacing values */
+.box2 {
+    background-color: lightgreen;
+    padding: 30px;
+    margin: 40px;
+    border: 10px dashed red;
+}
+
+/* Border-box example */
+.box3 {
+    background-color: lightcoral;
+    box-sizing: border-box;
+}
+
+/*Part C: Display Properties*/
+
+/* Block */
+.block-example {
+    display: block;
+    background-color: yellow;
+    margin: 10px 0;
+}
+
+/* Inline */
+.inline-example {
+    display: inline;
+    background-color: pink;
+}
+
+/* Inline-block */
+.inline-block-example {
+    display: inline-block;
+    width: 120px;
+    height: 60px;
+    background-color: orange;
+    margin: 5px;
+    text-align: center;
+    line-height: 60px;
+}
+
+/* Display none */
+.none-example {
+    display: none;
+}
+
+/*Part D: Visibility vs Display*/
+
+/* Visibility hidden */
+.hidden-example {
+    visibility: hidden;
+    background-color: gray;
+}

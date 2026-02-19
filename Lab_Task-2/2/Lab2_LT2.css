@@ -1,0 +1,72 @@
+/*Absolute Units */
+/* px */
+h1 {
+    font-size: 32px;
+}
+/* cm */
+h2 {
+    margin-bottom: 1cm;
+}
+
+/*Relative Units*/
+
+/* % */
+.container {
+    width: 60%;
+    background-color: lightgray;
+    padding: 2%;
+}
+
+/* em */
+p {
+    font-size: 1.2em;
+}
+
+/* rem */
+body {
+    font-size: 16px;
+}
+
+section p {
+    font-size: 1.5rem;
+}
+
+/* vh */
+body {
+    min-height: 100vh;
+}
+/*Selector Types*/
+
+/* Group Selector */
+h1, h2 {
+    text-align: center;
+    color: rgb(21, 21, 212);
+}
+
+/* Descendant Selector */
+div p {
+    color: rgb(43, 255, 0);
+}
+
+/* Attribute Selector */
+input[type="text"] {
+    border: 2px solid rgb(150, 9, 9);
+    padding: 5px;
+}
+
+/*Pseudo-Classes*/
+
+/* Hover */
+a:hover {
+    color: green;
+}
+
+/* Focus */
+input[type="text"]:focus {
+    background-color: yellow;
+}
+
+/* Active */
+button:active {
+    background-color: orange;
+}
