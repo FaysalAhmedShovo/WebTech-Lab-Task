@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="container">
+    <button id="ADD">Add</button>
+    <button id="REMOVE">Remove</button>
+    <button id="BUTTON">Button</button>
+    <div id="status">No Items</div>
+</div>
+<script>
+const status = document.getElementById("status");
+const ADD = document.getElementById("ADD");
+const REMOVE = document.getElementById("REMOVE");
+const BUTTON = document.getElementById("BUTTON");
+let items = [];
+let totalAdds = 0;
+ 
+function updateStatus() {
+    const len = items.length;
+    if (len === 0) { status.innerHTML = "No Items"; }
+    else if (len % 2 === 0) { status.innerHTML = "Even"; }
+    else { status.innerHTML = "Odd"; }
+}
+ 
+function handleAdd() {
+    totalAdds++;
+    items.push(totalAdds);
+    updateStatus();
+}
+ 
+function handleRemove() {
+    if (items.length > 0) {
+        items.pop();
+    }
+    updateStatus();
+}
+ 
+function handleButton() {
+    alert("Button clicked!");
+}
+ 
+ADD.addEventListener("click", handleAdd);
+REMOVE.addEventListener("click", handleRemove);
+BUTTON.addEventListener("click", handleButton);
+</script>
+</body>
+</html>
