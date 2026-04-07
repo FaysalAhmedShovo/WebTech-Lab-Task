@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faysal Ahmed Shovo | Professional CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+    <h1>Faysal Ahmed Shovo</h1>
+    <p>Computer Science Student | Web Developer</p>
+
+    <div class="social-links">
+        <a href="https://github.com/FaysalAhmedShovo" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+    </div>
+
+    <a href="cv.pdf" download class="cv-btn">📄 Download CV</a>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="about" class="reveal">
+    <h2>About Me</h2>
+    <p>I am a passionate Computer Science student focused on Web Development and Software Engineering.</p>
+</section>
+
+<section id="skills" class="reveal">
+    <h2>Skills</h2>
+
+    <div class="skill-bar">
+        <p>HTML</p>
+        <div class="bar"><div style="width:90%"></div></div>
+    </div>
+
+    <div class="skill-bar">
+        <p>CSS</p>
+        <div class="bar"><div style="width:85%"></div></div>
+    </div>
+
+    <div class="skill-bar">
+        <p>JavaScript</p>
+        <div class="bar"><div style="width:75%"></div></div>
+    </div>
+
+    <div class="skill-bar">
+        <p>C#</p>
+        <div class="bar"><div style="width:70%"></div></div>
+    </div>
+
+</section>
+
+<section id="projects" class="reveal">
+    <h2>Projects</h2>
+    <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>Personal responsive portfolio using HTML, CSS, JS.</p>
+    </div>
+    <div class="project-card">
+        <h3>Student Management System</h3>
+        <p>Built with C# and SQL for managing student data.</p>
+    </div>
+</section>
+
+<section id="education" class="reveal">
+    <h2>Education</h2>
+    <table>
+        <tr><th>Degree</th><th>Institution</th><th>Year</th></tr>
+        <tr><td>BSc in CSE</td><td>American International University-Bangladesh</td><td>2026</td></tr>
+        <tr><td>HSC</td><td>BAF Shaheen College,Kurmitola</td><td>2020</td></tr>
+        <tr><td>SSC</td><td>Sristy College of Tangail</td><td>2018</td></tr>
+    </table>
+</section>
+
+<section id="contact" class="reveal">
+    <h2>Contact Me</h2>
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="email" id="email" placeholder="Your Email">
+    <textarea id="message" placeholder="Your Message"></textarea>
+    <button onclick="submitForm()">Send Message</button>
+    <p id="output"></p>
+</section>
+
+<footer>
+    <p>© 2026 Faysal Ahmed Shovo</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
